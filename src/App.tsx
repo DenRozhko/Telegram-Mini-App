@@ -15,7 +15,7 @@ const App: React.FC = () => {
 
   // Render the ApolloProvider and CoinCounter component
   return (
-    <div class="v14_20"></div>
+    <div className="v14_20"></div>
   );
 };
 
