@@ -1,7 +1,4 @@
-import { ApolloProvider } from "@apollo/client";
 import React from "react";
-import client from "./apolloClient";
-import CoinCounter from "./components/CoinCounter";
 
 // Main App component
 const App: React.FC = () => {
@@ -18,12 +15,7 @@ const App: React.FC = () => {
 
   // Render the ApolloProvider and CoinCounter component
   return (
-    <ApolloProvider client={client}>
-      <div>
-        {/* Pass the Telegram ID as a prop to the CoinCounter component */}
-        <CoinCounter telegramId={telegramId} />
-      </div>
-    </ApolloProvider>
+    <html><head><link href="https://fonts.googleapis.com/css?family=Allerta&display=swap" rel="stylesheet" /><link href="./css/main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v14_20"><div class="v10_4"></div><div class="v14_6"></div><span class="v14_13">743 500</span><div class="v14_7"></div><div class="v14_9"></div><div class="v14_17"></div><span class="v14_19">Уровень 16</span><span class="v14_12">Работа и контракты</span><span class="v14_16">Доход +10</span></div></body></html>
   );
 };
 
