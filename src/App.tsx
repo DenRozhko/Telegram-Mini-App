@@ -1,5 +1,5 @@
-import React from "react";
 import { ApolloProvider } from "@apollo/client";
+import React from "react";
 import client from "./apolloClient";
 import CoinCounter from "./components/CoinCounter";
 
@@ -13,7 +13,7 @@ const App: React.FC = () => {
   // Check if the Telegram ID is provided in the URL
   if (!telegramId) {
     // If not, display an error message
-    return <div>Error: No Telegram ID provided</div>;
+    return <div>Unknow user</div>;
   }
 
   // Render the ApolloProvider and CoinCounter component
